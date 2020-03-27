@@ -1,6 +1,6 @@
 import UIKit
 
-struct Meal {
+struct Meal: Equatable, CustomStringConvertible {
 
     enum Category {
         case first, main, desert, drink
@@ -8,14 +8,14 @@ struct Meal {
 
     var name: String
     var price: Double
-    var description: String
+    var pitch: String
     var category: Category
-    var components: [Aliment]
+    var components: [Aliment]?
     var allergens: [String] {
         #warning("Don't forget the allergens")
         return []
     }
-    var calories: Double
+    var calories: Double?
     var isVegan: Bool {
         #warning("Don't forget")
         return true
@@ -24,13 +24,21 @@ struct Meal {
         #warning("Don't forget")
         return true
     }
+
+    var description: String {
+        return "\(name) : \(price)€"
+    }
 }
 
-struct Aliment {
+struct Aliment: Comparable {
     let name: String
     let allergens: [Allergen]
     let isVegan: Bool
     let isVeggie: Bool
+
+    static func < (lhs: Aliment, rhs: Aliment) -> Bool {
+        return lhs.name < rhs.name
+     }
 }
 
 enum Allergen {
@@ -50,11 +58,18 @@ class Restaurant {
     }
 
     func add(_ meal: Meal) {
+        guard !menu.contains(meal) else {
+            //on arrete la fonction
+            return
+        }
         menu.append(meal)
     }
 
     func remove(_ meal: Meal) {
-
+        // Essayer retirer un meal du tableau
+        if let idx = menu.firstIndex(of: meal) {
+            menu.remove(at: idx)
+        }
     }
 
     func all() -> [Meal] {
