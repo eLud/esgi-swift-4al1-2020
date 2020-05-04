@@ -14,6 +14,7 @@
 		33C82B1C24603D67007A127A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C82B1B24603D67007A127A /* Preview Assets.xcassets */; };
 		33C82B1F24603D67007A127A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C82B1D24603D67007A127A /* LaunchScreen.storyboard */; };
 		33C82B27246058D1007A127A /* BGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C82B26246058D1007A127A /* BGColor.swift */; };
+		33C82B292460685C007A127A /* SliderBGColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C82B282460685C007A127A /* SliderBGColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		33C82B1E24603D67007A127A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33C82B2024603D67007A127A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33C82B26246058D1007A127A /* BGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGColor.swift; sourceTree = "<group>"; };
+		33C82B282460685C007A127A /* SliderBGColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBGColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				33C82B1224603D64007A127A /* AppDelegate.swift */,
 				33C82B1424603D64007A127A /* SceneDelegate.swift */,
 				33C82B1624603D64007A127A /* ContentView.swift */,
+				33C82B282460685C007A127A /* SliderBGColor.swift */,
 				33C82B1824603D67007A127A /* Assets.xcassets */,
 				33C82B1D24603D67007A127A /* LaunchScreen.storyboard */,
 				33C82B2024603D67007A127A /* Info.plist */,
@@ -153,6 +156,7 @@
 				33C82B1324603D64007A127A /* AppDelegate.swift in Sources */,
 				33C82B1524603D64007A127A /* SceneDelegate.swift in Sources */,
 				33C82B1724603D64007A127A /* ContentView.swift in Sources */,
+				33C82B292460685C007A127A /* SliderBGColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
