@@ -10,9 +10,35 @@ import SwiftUI
 
 struct DynamicListIdentifiable: View {
     var body: some View {
-        List(PodcastTrack.demoTracks) { track in
-            Text(track.title)
-        }    }
+        NavigationView {
+            List(PodcastTrack.demoTracks) { track in
+                NavigationLink(destination: TrackDetails()) {
+                    Text(track.title)
+                }
+            }.navigationBarTitle("List")
+                .navigationBarItems(trailing: HStack {
+                    Button("Add") {
+                        print("Toto")
+                    }
+                    Button("Filter") {
+                        print("Toto")
+                    }
+                })
+        }
+    }
+}
+
+struct TrackDetails: View {
+
+    var body: some View {
+        VStack {
+            Text("Track details")
+            NavigationLink(destination: Text("End")) {
+                Text("Navigate")
+            }
+        }.navigationBarTitle("TrackDetails")
+
+    }
 }
 
 struct DynamicListIdentifiable_Previews: PreviewProvider {
