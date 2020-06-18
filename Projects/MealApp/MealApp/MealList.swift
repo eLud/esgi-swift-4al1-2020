@@ -13,7 +13,22 @@ struct MealList: View {
     var restaurant = Restaurant(name: "Chez moi")
 
     var body: some View {
-        List(restaurant.all()) { plat in
+        NavigationView {
+            List(restaurant.all()) { plat in
+                NavigationLink(destination: ContentView(meal: plat)) {
+                    MealCell(plat: plat)
+                }
+            }.navigationBarTitle("Meals")
+        }
+    }
+}
+
+struct MealCell: View {
+
+    var plat: Meal
+
+    var body: some View {
+        HStack {
             Image(systemName: "plus")
             VStack(alignment: .leading) {
                 Text(plat.name)
