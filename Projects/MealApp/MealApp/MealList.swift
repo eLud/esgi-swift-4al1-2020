@@ -9,8 +9,21 @@
 import SwiftUI
 
 struct MealList: View {
+
+    var restaurant = Restaurant(name: "Chez moi")
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(restaurant.all()) { plat in
+            Image(systemName: "plus")
+            VStack(alignment: .leading) {
+                Text(plat.name)
+                Text(plat.pitch)
+                    .font(.callout)
+            }
+            Spacer()
+            Text("\(plat.price) €")
+                .foregroundColor(.gray)
+        }
     }
 }
 
