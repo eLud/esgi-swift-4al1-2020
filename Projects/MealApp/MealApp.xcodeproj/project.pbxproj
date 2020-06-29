@@ -17,6 +17,8 @@
 		3339F911249A1ADF00776287 /* Aliment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339F910249A1ADF00776287 /* Aliment.swift */; };
 		3339F913249A1AEF00776287 /* Allergen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339F912249A1AEF00776287 /* Allergen.swift */; };
 		3339F915249A1AFF00776287 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3339F914249A1AFF00776287 /* Restaurant.swift */; };
+		339D0951249B610100CDD7A5 /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D0950249B610100CDD7A5 /* MealList.swift */; };
+		339D0955249B7FC900CDD7A5 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339D0954249B7FC900CDD7A5 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		3339F910249A1ADF00776287 /* Aliment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aliment.swift; sourceTree = "<group>"; };
 		3339F912249A1AEF00776287 /* Allergen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allergen.swift; sourceTree = "<group>"; };
 		3339F914249A1AFF00776287 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		339D0950249B610100CDD7A5 /* MealList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
+		339D0954249B7FC900CDD7A5 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				3339F8FA249A1A8000776287 /* AppDelegate.swift */,
 				3339F8FC249A1A8000776287 /* SceneDelegate.swift */,
 				3339F8FE249A1A8000776287 /* ContentView.swift */,
+				339D0950249B610100CDD7A5 /* MealList.swift */,
+				339D0954249B7FC900CDD7A5 /* InitialView.swift */,
 				3339F900249A1A8200776287 /* Assets.xcassets */,
 				3339F905249A1A8200776287 /* LaunchScreen.storyboard */,
 				3339F908249A1A8200776287 /* Info.plist */,
@@ -170,7 +176,9 @@
 				3339F913249A1AEF00776287 /* Allergen.swift in Sources */,
 				3339F90F249A1ACC00776287 /* Meal.swift in Sources */,
 				3339F915249A1AFF00776287 /* Restaurant.swift in Sources */,
+				339D0951249B610100CDD7A5 /* MealList.swift in Sources */,
 				3339F8FB249A1A8000776287 /* AppDelegate.swift in Sources */,
+				339D0955249B7FC900CDD7A5 /* InitialView.swift in Sources */,
 				3339F8FD249A1A8000776287 /* SceneDelegate.swift in Sources */,
 				3339F8FF249A1A8000776287 /* ContentView.swift in Sources */,
 			);
@@ -313,6 +321,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MealApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +342,7 @@
 				DEVELOPMENT_TEAM = A7SGM6JEMA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MealApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Modality
+//  Lists
 //
-//  Created by Ludovic Ollagnier on 29/06/2020.
-//  Copyright © 2020 Tectec. All rights reserved.
+//  Created by Ludovic Ollagnier on 18/06/2020.
+//  Copyright © 2020 TecTec. All rights reserved.
 //
 
 import UIKit
