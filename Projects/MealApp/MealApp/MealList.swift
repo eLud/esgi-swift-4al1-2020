@@ -11,7 +11,8 @@ import SwiftUI
 struct MealList: View {
 
     var restaurant = Restaurant(name: "Chez moi")
-
+    @State private var isAddingMeal = false
+    
     var body: some View {
         NavigationView {
             List(restaurant.all()) { plat in
@@ -19,6 +20,12 @@ struct MealList: View {
                     MealCell(plat: plat)
                 }
             }.navigationBarTitle("Meals")
+                .navigationBarItems(trailing: Button("Add") {
+                    self.isAddingMeal.toggle()
+                })
+                .sheet(isPresented: $isAddingMeal) {
+                    AddMealView(restaurant: self.restaurant)
+            }
         }
     }
 }
