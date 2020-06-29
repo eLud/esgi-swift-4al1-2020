@@ -15,7 +15,7 @@ class Restaurant {
 
     init(name: String) {
         self.name = name
-        menu = [Meal(name: "Pizza", price: 11.5, pitch: "Une spécialité italienne", category: .main, components: [Aliment(name: "Farine", allergens: [.gluten], isVegan: true, isVeggie: true), Aliment(name: "Tomate", allergens: [], isVegan: true, isVeggie: true), Aliment(name: "Fromage", allergens: [.lactose], isVegan: false, isVeggie: true)], calories: nil), Meal(name: "Pizza", price: 11.5, pitch: "Une spécialité italienne", category: .main, components: [Aliment(name: "Farine", allergens: [.gluten], isVegan: true, isVeggie: true), Aliment(name: "Tomate", allergens: [], isVegan: true, isVeggie: true), Aliment(name: "Fromage", allergens: [.lactose], isVegan: false, isVeggie: true)], calories: nil)]
+        menu = []
     }
 
     func add(_ meal: Meal) {

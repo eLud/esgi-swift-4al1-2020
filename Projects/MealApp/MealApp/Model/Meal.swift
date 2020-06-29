@@ -8,13 +8,12 @@
 
 import Foundation
 
-struct Meal: Equatable, CustomStringConvertible, Identifiable {
+struct Meal: Equatable, CustomStringConvertible {
 
     enum Category {
         case first, main, desert, drink
     }
 
-    let id = UUID()
     var name: String
     var price: Double
     var pitch: String
